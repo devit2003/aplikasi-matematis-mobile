@@ -1,0 +1,34 @@
+name: calculator_app
+description: A simple calculator and BMI calculator app in Flutter.
+
+# The Flutter SDK version your project uses.
+environment:
+  sdk: ">=2.17.0 <3.0.0"
+  flutter: ">=3.0.0"
+
+# Dependencies the app needs.
+dependencies:
+  flutter:
+    sdk: flutter
+  image_picker: ^0.8.5+3 # For picking images from the gallery or camera
+
+# For generating localized resources and other assets.
+flutter:
+  uses-material-design: true
+
+  # Declare the assets the app uses.
+  assets:
+    - assets/D1.png
+
+# For the image_picker plugin to access the camera and gallery on Android and iOS.
+permissions:
+  android.permission.CAMERA: true
+  android.permission.WRITE_EXTERNAL_STORAGE: true
+  android.permission.READ_EXTERNAL_STORAGE: true
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.1 # To enforce good coding practices
+
+
